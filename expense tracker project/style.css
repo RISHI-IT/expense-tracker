@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    line-height: 1.6;
+    background:linen;
+    color:#333;
+}
+header{
+    background:lightseagreen;
+    color:#fff;
+    text-align:center;
+    padding:1rem 0;
+    box-shadow:0 4px 6px lightsteelblue;
+}
+main{
+    max-width:900px;
+    margin:2rem auto;
+    padding:1rem;
+    background:rgb(223, 251, 227);
+    border-radius:20px;
+    box-shadow: 0 4px 6px lightsteelblue;
+}
+h1,h2{
+    margin-bottom:1rem;
+}
+label{
+    display:block;
+    margin:0.5rem 0;
+}
+input,select,button{
+    width:100%;
+    padding:0.75 rem;
+    margin-bottom:1rem;
+    border:1px solid steelblue;
+    border-radius:30px;
+    font-size:1rem;
+}
+button{
+    background: #0aee11;
+    color:#fff;
+    border: none;
+    cursor:pointer;
+    font-weight:500;
+    width:30%;
+    padding:10px;
+}
+button:hover{
+    background:aquamarine;
+}
+#expenseList{
+    list-style:none;
+    padding:0;
+}
+#expenseList li{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: #f1f1f1;
+    padding:1rem;
+    margin-bottom: 0.5rem;
+    border-radius:30px;
+    flex-wrap:wrap;
+}
+#expenseList li:nth-child(odd){
+    background: #f2bcbc;
+}
+.edit-btn,.delete-btn{
+    margin-left:10px;
+    background:limegreen;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:0.5rem;
+    font-size:0.9rem;
+    border-radius:30px;
+}
+.delete-btn{
+    background: #e74c3c;
+}
+.edit-btn:hover{
+    background:#05a1e5;
+}
+.delete-btn:hover{
+    background:#c0392b;
+}
+footer{
+    background-color: lightseagreen;
+    color:#fff;
+    text-align:center;
+    padding:1rem 0;
+    margin-top:2rem;
+    font-size:1rem;
+    box-shadow:0 -4px 6px lightblue;
+}
+@media screen and(max-width:600px){
+    main{
+        margin:1rem;
+        padding:0.5rem;
+    }
+    h1,h2{
+        font-size:1.5rem;
+    }
+    input,select,button{
+        font-size:0.9rem;
+        padding:0.5rem;
+    }
+    #expenseList li{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .edit-btn{
+        margin:0.5rem 0 0 0;
+        font-size:0.8rem;
+        padding:0.4rem;
+    }
+    footer{
+        font-size:0.9rem;
+        padding:0.8rem 0;
+    }
+}
